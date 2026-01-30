@@ -22,10 +22,10 @@ const LoadingScreen = ({oncomplete}) => {
             // here the loading will complete so call here a settimeout after 1000 sec set the loaded to true i mean oncomplete is called 
             setTimeout(() => {
                 oncomplete();
-            }, 1000);
+            }, 200);
         }
 
-        }, 100);
+        }, 60);
 
         
 
@@ -54,7 +54,7 @@ const LoadingScreen = ({oncomplete}) => {
          </div>
 
       {/* loading bar  */}
-      <div className="relative w-[200px] h-[2px] rounded bg-gray-800
+      <div className="relative md:w-[200px] h-[2px] rounded bg-gray-800 w-[100px]
       overflow-hidden">
 
         {/* inner blue bar that moves back and forth  */}
