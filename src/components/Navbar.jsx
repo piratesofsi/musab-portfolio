@@ -11,8 +11,8 @@ const Navbar = () => {
 
           {/* logo  */}
 
-
-          <a href="#home" className="font-mono font-bold text-[25px]">
+         
+          <a href="#home" className="font-mono font-bold text-[25px] ">
             Musab<span className="text-blue-500 font-extrabold  ">.codes</span>
 
           </a>

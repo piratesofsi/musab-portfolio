@@ -44,7 +44,7 @@ const LoadingScreen = ({oncomplete}) => {
     <div className="fixed inset-0 z-50 flex flex-col justify-center items-center ">
      
       {/* text + last | wil blink animation  */}
-      <div className="mb-4 text-4xl font-mono  font-bold  "> 
+      <div className="mb-4 md:text-4xl font-mono  font-bold text-xl  "> 
         {/* here i did added the blink animation too  */}
         {text}<span
       className="animate-blink ml-1">
