@@ -37,15 +37,17 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen md:max-w-[1600px] md:mx-auto mt-3 md:mt-7 flex flex-col-reverse md:flex-row items-center gap-14 justify-start px-10 md:px-24"
+      className="min-h-screen md:max-w-[1600px] md:mx-auto mt-5 md:mt-7 flex flex-col-reverse md:flex-row items-center gap-14 justify-start px-10 md:px-24 
+"
     >
       {/* LEFT TEXT */}
-      <div className="md:w-1/2 w-full flex flex-col justify-center flex-shrink-0">
+      <div className="md:w-1/2 w-full flex flex-col justify-center flex-shrink-0 
+      h-[5.5rem] md:h-[4.5rem]">
         <h1 className="text-4xl md:text-6xl font-bold">
           Hi,{" "}
 
         </h1>
-        <span className="text-blue-500 text-4xl md:text-6xl font-bold pr-2 inline-block whitespace-nowrap max-w-full">
+        <span className="text-blue-500 text-4xl md:text-6xl font-bold pr-2 inline-block md:whitespace-nowrap wrap-break-word whitespace-normal  max-w-full">
           {text}< span className="text-white animate-pulse">|</span>
         </span>
 
