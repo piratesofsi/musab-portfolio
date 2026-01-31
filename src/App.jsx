@@ -2,6 +2,8 @@ import { use, useEffect, useState } from "react";
 import LoadingScreen from "./components/LoadingScreen"
 import Navbar from "./components/Navbar";
 import Home from "./components/sections/Home";
+import OnekoCat from "./components/OnekoCat";
+
 
 
 
@@ -17,6 +19,10 @@ function App() {
       {!isLoaded && <LoadingScreen oncomplete={() =>setIsLoaded(true)}/> }
         <div className={`min-h-screen transition-opacity duration-700 ${isLoaded?"opacity-100" : "opacity-0"} bg-black text-gray-100`}
         >
+
+              {/* Pixel Cat */}
+               {/* 🐱 ONLY AFTER LOADING */}
+                {isLoaded && <OnekoCat />}
           <Navbar/>
           <Home/>
           
