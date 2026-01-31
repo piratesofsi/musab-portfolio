@@ -40,12 +40,12 @@ const Home = () => {
       className="min-h-screen md:max-w-[1600px] md:mx-auto mt-3 md:mt-7 flex flex-col-reverse md:flex-row items-center gap-14 justify-start px-10 md:px-24"
     >
       {/* LEFT TEXT */}
-      <div className="md:w-1/2 w-full flex flex-col justify-center">
+      <div className="md:w-1/2 w-full flex flex-col justify-center flex-shrink-0">
         <h1 className="text-4xl md:text-6xl font-bold">
           Hi,{" "}
 
         </h1>
-        <span className="text-blue-500 text-4xl md:text-6xl font-bold  pr-2 inline-block whitespace-nowrap w-[22ch]">
+        <span className="text-blue-500 text-4xl md:text-6xl font-bold pr-2 inline-block whitespace-nowrap max-w-full">
           {text}< span className="text-white animate-pulse">|</span>
         </span>
 
