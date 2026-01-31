@@ -24,7 +24,7 @@ const Navbar = () => {
           </div>
 
           {/* for desktop we got all the nav links  */}
-          <div className="hidden md:flex items-center text-gray-500 font-bold space-x-8">
+          <div className="hidden md:flex items-center text-[19px] text-gray-500 font-bold space-x-8">
             <a href="#home" className="hover:text-blue-500 duration-200 relative group">Home
               {/* blue line below  */}
               <div className="w-0 absolute h-[2px] left-1/2 -bottom-2  bg-blue-500  transition-all ease-out duration-200 group-hover:w-full group-hover:-translate-x-1/2  "> </div>

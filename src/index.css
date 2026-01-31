@@ -37,7 +37,7 @@
   }
 
   .animate-loading {
-    animation: loading 0.9s ease infinite;
+    animation: loading 0.6s ease infinite;
   }
 
   @keyframes blink {
