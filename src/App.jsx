@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/sections/Home";
 import OnekoCat from "./components/OnekoCat";
 import ThemeToggle from "./components/ThemeToggle";
+import About from "./components/sections/About";
 
 
 
@@ -27,8 +28,9 @@ function App() {
               {/* Pixel Cat */}
                {/* 🐱 ONLY AFTER LOADING */}
                 {isLoaded && <OnekoCat />}
-          <Navbar/>
+          <Navbar />
           <Home/>
+          <About/>
           
         </div>
     </>

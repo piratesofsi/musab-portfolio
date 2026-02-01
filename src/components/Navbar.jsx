@@ -2,10 +2,10 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 w-full bg-[#0a0a0a]
+    <nav className="fixed top-0 w-full 
     light:bg-white
      z-50 backdrop-blur-lg border-b
-    border-white/10 light:border-black/10"  >
+    border-white/10 "  >
       {/* context nav bar  */}
       <div className="max-w-5xl  mx-auto p-4 ">
         <div className="flex justify-between items-center h-7">
@@ -30,14 +30,14 @@ const Navbar = () => {
               {/* blue line below  */}
               <div className="w-0 absolute h-[2px] left-1/2 -bottom-2  bg-blue-500   transition-all ease-out duration-200 group-hover:w-full group-hover:-translate-x-1/2  "> </div>
             </a>
-            <a href="#Skills" className="hover:text-blue-500 duration-200 relative group">Skills
+            <a href="#About" className="hover:text-blue-500 duration-200 relative group">About
               {/* blue line below  */}
               <div className="w-0 absolute h-[2px] left-1/2 -bottom-2  bg-blue-500  transition-all ease-out duration-200 group-hover:w-full group-hover:-translate-x-1/2 "> </div>
             </a>
-            <a href="#About" className="hover:text-blue-500 duration-200 relative group">About
+            <a href="#Projects" className="hover:text-blue-500 duration-200 relative group">Projects
               {/* blue line below  */}
               <div className="w-0 absolute h-[2px] left-1/2 -bottom-2  bg-blue-500  transition-all ease-out duration-200 group-hover:w-full group-hover:-translate-x-1/2 "> </div> </a>
-            <a href="#Contact me" className="hover:text-blue-500 duration-200 relative group" >Contact me
+            <a href="#Contact" className="hover:text-blue-500 duration-200 relative group" >Contact 
               {/* blue line below  */}
               <div className="w-0 absolute h-[2px] left-1/2 -bottom-2  bg-blue-500  transition-all ease-out duration-200 group-hover:w-full group-hover:-translate-x-1/2 "> </div>
             </a>
