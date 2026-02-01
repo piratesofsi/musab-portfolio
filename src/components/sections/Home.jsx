@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className=" min-h-screen bg-[#0a0a0a] light:bg-white  md:max-w-[1600px] md:mx-auto  md:mt-7 flex flex-col-reverse md:flex-row items-center gap-14 justify-start px-10 md:px-20 
+      className=" min-h-[calc(100svh-4rem)] pt-24 md:pt-20 bg-[#0a0a0a] light:bg-white  md:max-w-[1600px] md:mx-auto  md:mt-7 flex flex-col-reverse md:flex-row items-center gap-14 justify-start px-10 md:px-20 
 "
     >
       {/* LEFT TEXT */}
