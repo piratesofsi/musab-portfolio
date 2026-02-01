@@ -41,10 +41,12 @@ const LoadingScreen = ({oncomplete}) => {
   return (
     // main div section which decides the width and height and type of positioning  and flex and all make it center as it got a text and a loading 
     // bar down so flex-col 
-    <div className="fixed inset-0 z-50 flex flex-col justify-center items-center ">
+    <div className="fixed inset-0 z-50 flex flex-col justify-center items-center
+    bg-black light:bg-white ">
      
       {/* text + last | wil blink animation  */}
-      <div className="mb-4 md:text-4xl font-mono  font-bold text-xl  "> 
+      <div className="mb-4 md:text-4xl font-mono  font-bold text-xl text-white 
+      light:text-black"> 
         {/* here i did added the blink animation too  */}
         {text}<span
       className="animate-blink ml-1">

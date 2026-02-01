@@ -3,6 +3,7 @@ import LoadingScreen from "./components/LoadingScreen"
 import Navbar from "./components/Navbar";
 import Home from "./components/sections/Home";
 import OnekoCat from "./components/OnekoCat";
+import ThemeToggle from "./components/ThemeToggle";
 
 
 
@@ -20,6 +21,9 @@ function App() {
         <div className={`min-h-screen transition-opacity duration-700 ${isLoaded?"opacity-100" : "opacity-0"} bg-black text-gray-100`}
         >
 
+
+          
+          <ThemeToggle/>
               {/* Pixel Cat */}
                {/* 🐱 ONLY AFTER LOADING */}
                 {isLoaded && <OnekoCat />}

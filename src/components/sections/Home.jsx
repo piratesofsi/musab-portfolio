@@ -37,13 +37,13 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="md:min-h-screen min-h-[640px] md:max-w-[1600px] md:mx-auto  md:mt-7 flex flex-col-reverse md:flex-row items-center gap-14 justify-start px-10 md:px-20 
+      className=" min-h-screen bg-[#0a0a0a] light:bg-white  md:max-w-[1600px] md:mx-auto  md:mt-7 flex flex-col-reverse md:flex-row items-center gap-14 justify-start px-10 md:px-20 
 "
     >
       {/* LEFT TEXT */}
       <div className="md:w-1/2 w-full flex flex-col justify-center flex-shrink-0 
       h-[5.5rem] md:h-[4.5rem]">
-        <h1 className="text-4xl md:text-6xl font-bold">
+        <h1 className="text-4xl md:text-6xl font-bold light:text-black">
           Hi,{" "}
 
         </h1>
@@ -51,7 +51,7 @@ const Home = () => {
           {text}< span className="text-white animate-pulse">|</span>
         </span>
 
-        <p className="mt-6 text-gray-400 max-w-md">
+        <p className="mt-6 text-gray-400 max-w-md light:text-gray-700">
           I build clean, scalable web apps with React, Node, and modern UI.
         </p>
       </div>
