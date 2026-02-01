@@ -23,25 +23,31 @@ export default function ThemeToggle() {
   }
 
   return (
-    <button
-      onClick={toggleTheme}
-      className="
-        fixed bottom-6 right-6 z-[9999]
-        px-3 py-3
-        md:px-4 md:py-2 rounded-full shadow-lg
-        bg-blue-600 text-white
-        hover:bg-blue-700 transition
-      "
-    >
-        {/* Icon always visible */}
+ <button
+  onClick={toggleTheme}
+  className="
+    fixed bottom-6 right-6 z-[9999]
+
+    bg-blue-600 text-white
+    hover:bg-blue-700 transition shadow-lg
+
+    w-12 h-12 md:w-auto md:h-auto
+    rounded-full
+
+    flex items-center justify-center
+    md:px-4 md:py-2
+  "
+>
+  {/* Icon always visible */}
   <span className="text-lg">
     {isLight ? "🌙" : "☀️"}
   </span>
 
-  {/* Text only on md+ screens */}
-  <span className="hidden md:inline">
+  {/* Text only on desktop */}
+  <span className="hidden md:inline ml-1">
     {isLight ? "Dark" : "Light"}
   </span>
-    </button>
+</button>
+
   );
 }
