@@ -123,8 +123,8 @@ const About = () => {
             {/* main content box for the work experience + hands on experience  */}
             <div className="md:max-w-[1080px] max-w-[400px] pt-14   md:pt-6 mx-auto flex flex-col md:flex-row  gap-8 md:gap-5 justify-center items-center ">
                 {/* first box  */}
-                <div className="md:w-[330px] md:h-[230px] h-[250px] w-[300px] hover:scale-[1.01] transition-all duration-300
-  md:px-5 md:py-6 light:shadow-2xl  light:text-black border border-gray-800 rounded-xl dark:shadow-[0_0_25px_rgba(59,130,246,0.15)]
+                <div className="md:w-[330px] md:h-[230px] h-[270px] w-[300px] hover:scale-[1.01] transition-all duration-300
+  md:px-5 md:py-6 light:shadow-2xl  light:text-black border border-gray-800 rounded-xl 
 ">
                     <h1 className=" font-bold md:text-[16px] text-[14px] text-center pt-5 mb-3 md:pt-0">🏫 Education </h1>
 
@@ -139,8 +139,8 @@ const About = () => {
                     </ul>
                 </div>
                 {/* second box  */}
-                <div className="md:w-[330px] md:h-[230px] h-[250px] w-[300px] hover:scale-[1.01] transition-all duration-300
- md:px-5 md:py-6 light:shadow-2xl   light:text-black  border border-gray-800 rounded-xl shadow-[0_0_25px_rgba(59,130,246,0.15)]
+                <div className="md:w-[330px] md:h-[230px] h-[270px] w-[300px] hover:scale-[1.01] transition-all duration-300
+ md:px-5 md:py-6 light:shadow-2xl   light:text-black  border border-gray-800 rounded-xl 
 ">
                     <h1 className=" font-bold md:text-[16px] text-[14px] mb-3 text-center pt-5 md:pt-0"> 🏢 Projects & Practical Experience</h1>
 
