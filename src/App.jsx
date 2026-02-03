@@ -5,6 +5,7 @@ import Home from "./components/sections/Home";
 import OnekoCat from "./components/OnekoCat";
 import ThemeToggle from "./components/ThemeToggle";
 import About from "./components/sections/About";
+import Projects from "./components/sections/Projects";
 
 
 
@@ -31,6 +32,7 @@ function App() {
           <Navbar />
           <Home/>
           <About/>
+          <Projects/>
           
         </div>
     </>

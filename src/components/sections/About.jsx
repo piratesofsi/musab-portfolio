@@ -11,7 +11,7 @@ import sql from "../../assets/sql.png";
 const About = () => {
     return (
         <section id='About' className="min-h-[calc(100svh-4rem)] relative mt-14
-        md:mt-1
+        md:mt-1 scroll-mt-14
     light:bg-white bg-black py-10">
             {/* content box  */}
 
