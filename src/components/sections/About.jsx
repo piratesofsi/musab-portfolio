@@ -7,12 +7,20 @@ import java from "../../assets/java.png";
 import tailwind from "../../assets/tailwindcss.svg";
 import nodejs from "../../assets/nodejs.png";
 import sql from "../../assets/sql.png";
+import RevealOnScreen from '../RevealOnScreen';
 
 const About = () => {
     return (
         <section id='About' className="min-h-[calc(100svh-4rem)] relative mt-14
         md:mt-1 
     light:bg-white bg-black py-10">
+
+        {/* reveal on screeen component */}
+
+        <RevealOnScreen>
+
+
+
             {/* content box  */}
 
             <div className="md:max-w-[1080px] max-w-[400px] mx-auto flex flex-col justify-center items-center  ">
@@ -163,6 +171,9 @@ const About = () => {
                     
                 </div>
             </div>
+
+
+            </RevealOnScreen>
 
         </section>
     )

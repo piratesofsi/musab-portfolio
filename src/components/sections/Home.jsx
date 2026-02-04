@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import myImg from "../../assets/myImg.png"; // adjust path
 import myImg2 from "../../assets/myImg2.png"; // adjust path
+import RevealOnScreen from "../RevealOnScreen";
 
 const Home = () => {
   const texts = ["I'm Musab", "I'm a MERN Developer", "I'm a Web Developer"];
@@ -34,12 +35,17 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, [subIndex, index, isDeleting]);
 
-  return (
+  return (<RevealOnScreen>
     <section
       id="home"
       className=" min-h-[calc(100svh-4rem)]  pt-24 md:pt-20 z-50 light:bg-white  md:max-w-[1600px] md:mx-auto  md:mt-7 flex flex-col-reverse md:flex-row items-center gap-14 justify-start px-10 md:px-20 
 "
     >
+
+      {/* reveal on screen component  */}
+      
+
+
       {/* LEFT TEXT */}
       <div className="md:w-1/2 w-full flex flex-col justify-center flex-shrink-0 
       h-[5.5rem] md:h-[4.5rem]">
@@ -77,7 +83,12 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+      
+
+
     </section>
+    </RevealOnScreen>
   );
 };
 

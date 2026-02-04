@@ -1,25 +1,38 @@
 import React from 'react'
 import github from "../../assets/github.png"; 
 import github2 from "../../assets/logo.png"; 
+import RevealOnScreen from '../RevealOnScreen';
 
 const Projects = () => {
 
 
   return (
+  
     <section id="Projects" className="md:min-h-[calc(100svh-4rem)]   relative
     flex flex-col justify-center items-center
     md:mt-7  ">
+
+
+        {/* reaveal on screen  */}
+        
 
         {/* main context box  */}
         <div className="md:max-w-[1080px] flex flex-col justify-center items-center py-20 mx-auto">
 
 
             {/* heading  */}
+            <RevealOnScreen>
         <h1 className="md:text-3xl  text-2xl font-bold light:from-purple-600 light:to-pink-500 font-mono text-center mb-5 bg-gradient-to-r bg-clip-text from-blue-500 
             to-cyan-400 text-transparent ">Featured Projects</h1>
 
+            </RevealOnScreen>
+
             {/* grid of 2 for desktop and for phone only 1 grid  */}
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-7 ">
+              
+
+              {/* revealonscreen on each card  */}
+              <RevealOnScreen>
                 {/* project card 1  */}
                 <div className=" md:w-[350px] w-[300px] border  dark:border-gray-800 md:py-5 md:px-7 light:border-gray-800
                  rounded-xl hover:-translate-y-2 duration-200 transition-all
@@ -45,8 +58,10 @@ const Projects = () => {
                     <a href="https://leetcode-stats-ten.vercel.app/"><div>Demo</div></a> <div> | </div>  <a href="https://github.com/piratesofsi/leetcode-stats" className='flex  justify-center items-center gap-2'><img src={github2} alt="" width="22px" /> <span>Github</span></a>
                     </div>
                 </div>
+                </RevealOnScreen>
 
                 {/* project card 2  */}
+                 <RevealOnScreen>
 
                  
                 <div className=" md:w-[350px] w-[300px] border  dark:border-gray-800 md:py-5 md:px-7 light:border-gray-800
@@ -73,8 +88,10 @@ const Projects = () => {
                     <a href="https://vs-code-clone-gilt.vercel.app/"><div>Demo</div></a> <div> | </div>  <a href="https://github.com/piratesofsi/vs-code-clone" className='flex  justify-center items-center gap-2'><img src={github2} alt="" width="22px" /> <span>Github</span></a>
                     </div>
                 </div>
+                </RevealOnScreen>
 
                 {/* project card 3  */}
+                 <RevealOnScreen>
 
                  <div className=" md:w-[350px] w-[300px] border  dark:border-gray-800 md:py-5 md:px-7 light:border-gray-800
                  rounded-xl hover:-translate-y-2 duration-200 transition-all
@@ -101,7 +118,11 @@ const Projects = () => {
                     </div>
                 </div>
 
+                </RevealOnScreen>
+
                 {/* project card 4  */}
+
+                <RevealOnScreen>
 
 
               <div className=" md:w-[350px] w-[300px] border  dark:border-gray-800 md:py-5 md:px-7 light:border-gray-800
@@ -129,6 +150,8 @@ const Projects = () => {
                     </div>
                 </div>
 
+               </RevealOnScreen>
+
 
 
 
@@ -136,8 +159,12 @@ const Projects = () => {
 
 
         </div>
-      
+
+
+
+           
     </section>
+  
   )
 }
 
