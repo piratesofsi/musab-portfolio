@@ -10,7 +10,7 @@ const Projects = () => {
   
     <section id="Projects" className="md:min-h-[calc(100svh-4rem)]   relative
     flex flex-col justify-center items-center
-    md:mt-7  ">
+    md:mt-7 scroll-mt-12  ">
 
 
         {/* reaveal on screen  */}

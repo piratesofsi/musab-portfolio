@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full 
     light:bg-white
      z-50 backdrop-blur-lg border-b
-    border-white/10 "  >
+    border-white/10 light:border-gray-200 "  >
       {/* context nav bar  */}
       <div className="max-w-5xl  mx-auto p-4 ">
         <div className="flex justify-between items-center h-7">

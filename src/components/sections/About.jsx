@@ -13,7 +13,7 @@ const About = () => {
     return (
         <section id='About' className="min-h-[calc(100svh-4rem)] relative mt-14
         md:mt-1 
-    light:bg-white bg-black py-10">
+    light:bg-white bg-black py-10 scroll-mt-10">
 
         {/* reveal on screeen component */}
 
