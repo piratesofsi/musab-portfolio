@@ -6,6 +6,7 @@ import OnekoCat from "./components/OnekoCat";
 import ThemeToggle from "./components/ThemeToggle";
 import About from "./components/sections/About";
 import Projects from "./components/sections/Projects";
+import Contact from "./components/sections/Contact";
 
 
 
@@ -33,6 +34,7 @@ function App() {
           <Home/>
           <About/>
           <Projects/>
+          <Contact/>
           
         </div>
     </>

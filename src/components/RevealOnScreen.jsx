@@ -53,13 +53,15 @@ const RevealOnScreen = ({ children }) => {
             ([entry]) => {
 
                 if (!ref.current) return;
-
+                // if the div is in the viewport then reveal it 
                 if (entry.isIntersecting) {
+                    // here the visible class is added 
                     ref.current.classList.add("visible");
-
+                    // if the it's on mobile means after first time remove the animation 
                     if (isMobile) {
                         observer.unobserve(ref.current); 
                     }
+                    // and if not on mobile js remove it and then again add it for other one 
                 } else if (!isMobile) {
                    
                     ref.current.classList.remove("visible");
