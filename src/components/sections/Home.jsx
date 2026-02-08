@@ -78,7 +78,8 @@ const Home = () => {
             View Projects
           </a>
 
-          <a   href="/musabresume.pdf" className="inline-flex justify-center items-center  px-3 py-3 md:px-6 md:py-3  md:w-[200px] w-[154px] font-bold text-[14px] md:text-[13px]
+          <a   href="/musabresume.pdf"  target="_blank"
+  rel="noopener noreferrer" className="inline-flex justify-center items-center  px-3 py-3 md:px-6 md:py-3  md:w-[200px] w-[154px] font-bold text-[14px] md:text-[13px]
  border border-blue-500 cursor-pointer text-blue-500 hover:bg-blue-500 hover:text-white md:transition rounded-xl font-semibold active:scale-95 transition-transform duration-150
 ">
             Downoad Resume
