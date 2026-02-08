@@ -83,3 +83,52 @@ html {
   opacity: 1;
   transform: translateY(0px);
 }
+/* ================================
+   TOAST BASE STYLE
+================================ */
+.toast-base {
+  @apply rounded-xl shadow-lg border px-4 py-3 text-sm max-w-[90vw]
+         transition-all duration-300 min-h-[48px];
+  
+  /* iOS safe area support */
+  padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));
+}
+
+/* ================================
+   DARK MODE TOASTS
+================================ */
+.dark .toast-base {
+  @apply bg-neutral-900 text-white border-blue-500/30;
+}
+
+.dark .toast-success {
+  @apply bg-green-600 text-white;
+}
+
+.dark .toast-error {
+  @apply bg-red-600 text-white;
+}
+
+/* ================================
+   LIGHT MODE TOASTS
+================================ */
+.light .toast-base {
+  @apply bg-white text-black border-gray-300;
+}
+
+.light .toast-success {
+  @apply bg-green-500 text-white;
+}
+
+.light .toast-error {
+  @apply bg-red-500 text-white;
+}
+
+/* ================================
+   REDUCED MOTION SUPPORT
+================================ */
+@media (prefers-reduced-motion: reduce) {
+  .toast-base {
+    transition: none;
+  }
+}

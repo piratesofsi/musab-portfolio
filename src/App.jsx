@@ -7,6 +7,8 @@ import ThemeToggle from "./components/ThemeToggle";
 import About from "./components/sections/About";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
+import { Toaster } from "react-hot-toast";
+
 
 
 
@@ -20,6 +22,18 @@ function App() {
 
   return (
     <>
+
+      <Toaster
+  position="bottom-center"
+  toastOptions={{
+    className: "toast-base",
+    success: { className: "toast-success" },
+    error: { className: "toast-error" },
+  }}
+/>
+
+
+
       {!isLoaded && <LoadingScreen oncomplete={() =>setIsLoaded(true)}/> }
         <div className={`min-h-screen transition-opacity duration-700 ${isLoaded?"opacity-100" : "opacity-0"} bg-black light:bg-white text-gray-100`}
         >

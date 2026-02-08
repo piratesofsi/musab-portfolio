@@ -71,16 +71,18 @@ const Home = () => {
 "
         />
         {/* cta buttons  */}
-        <div className="flex flex-col gap-4 md:flex-row justify-between md:w-[380px] pl-4 pr-4 ">
-          <button className="px-4 py-2 md:px-8 md:py-4
- bg-blue-600 hover:bg-blue-700 transition rounded-xl text-white cursor-pointer font-semibold shadow-lg hover:scale-105">
+        <div className=" inline-flex  flex-col gap-4 md:flex-row justify-between items-center md:w-[380px] pl-4 pr-4 ">
+          <a href="#Projects"  className=" inline-flex  justify-center items-center px-3 py-2 md:px-7 md:py-3  md:w-[200px] w-[154px]  text-[16px]
+ bg-blue-600 hover:bg-blue-700 md:transition rounded-xl text-white cursor-pointer font-semibold shadow-lg hover:scale-105 active:scale-95 transition-transform duration-150
+">
             View Projects
-          </button>
+          </a>
 
-          <button className="px-4 py-2 md:px-8 md:py-4
- border border-blue-500 cursor-pointer text-blue-500 hover:bg-blue-500 hover:text-white transition rounded-xl font-semibold">
-            Contact Me
-          </button>
+          <a className="inline-flex justify-center items-center  px-3 py-3 md:px-6 md:py-3  md:w-[200px] w-[154px] font-bold text-[14px] md:text-[13px]
+ border border-blue-500 cursor-pointer text-blue-500 hover:bg-blue-500 hover:text-white md:transition rounded-xl font-semibold active:scale-95 transition-transform duration-150
+">
+            Downoad Resume
+          </a>
         </div>
       </div>
 

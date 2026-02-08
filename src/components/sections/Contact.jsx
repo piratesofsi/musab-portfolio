@@ -4,6 +4,8 @@ import emailjs from "@emailjs/browser";
 import github from "../../assets/github-icon.svg"; 
 import linkdin from "../../assets/linkedin-icon.svg"; 
 import x from "../../assets/x-icon.svg"; 
+import toast from "react-hot-toast";
+
 
 
 const Contact = () => {
@@ -31,7 +33,8 @@ const Contact = () => {
             e.target,
             import.meta.env.VITE_EMAIL_PUBLIC
         ).then(()=>{
-            alert("form submitted successfully!");
+           toast.success("Message sent successfully ");
+
 
             // clear all inputes
             
@@ -41,7 +44,7 @@ const Contact = () => {
         })
         .catch((err)=>{
             console.log(err);
-            alert("OOps , something went wrong!!");
+              toast.error("Oops! Something went wrong 😭");
         })
         .finally(()=>{
             // enable the button 
@@ -55,14 +58,14 @@ const Contact = () => {
 
         
             <section id='Contact'
-                className='min-h-[calc(100svh-4rem)] pt-2 flex flex-col justify-center items-center '>
+                className='min-h-[calc(100svh-4rem)] pt-2 flex flex-col justify-center items-center md:mt-0 -mt-12 '>
 
                 {/* main content form 
          */}
          <RevealOnScreen>
-                <div className='px-4 md:w-150 mx-auto  py-10 '>
+                <div className='px-4 md:w-150 mx-auto  py-10  '>
                     <h1 className='md:text-3xl  text-2xl font-bold light:from-purple-600 light:to-pink-500 font-mono text-center mb-5 bg-gradient-to-r bg-clip-text from-blue-500 
-            to-cyan-400 text-transparent md:pb- '>Get In Touch</h1>
+            to-cyan-400 text-transparent  '>Get In Touch</h1>
 
             {/* form  */}
                     <form onSubmit={sendEmail} className='space-y-6'>
@@ -111,11 +114,39 @@ const Contact = () => {
                             type="submit"
                             disabled={isSending}
                             className='w-full text-white light:text-black py-3 px-6  
-                rounded font-medium transition bg-blue-500 light:bg-blue-400 hover:bg-blue-700 light:hover:bg-blue-500 cursor-pointer hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] light:hover:shadow-[0_0_12px_rgba(37,99,235,0.25)]
+                rounded font-medium md:transition bg-blue-500 light:bg-blue-400 hover:bg-blue-700 light:hover:bg-blue-500 cursor-pointer hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] light:hover:shadow-[0_0_12px_rgba(37,99,235,0.25)] transition-transform duration-150 active:scale-95
+disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100
+
 ' >
                               {isSending ? "Sending..." : "Submit"}
+                              
 
                         </button>
+
+                        
+    <div className='flex  w-full justify-center gap-2  '>
+
+                    
+
+                    {/* for desktop  */}
+
+                    {/* contact icons  */}
+                    <div className=' md:flex justify-center items-center gap-3 hidden '>
+                      <a href="https://github.com/piratesofsi"><img src={github} alt=""  className=''/></a>  
+                      <a href="https://www.linkedin.com/in/musab-shaikh-16a58128a/"><img src={linkdin} alt="" /></a>  
+                      <a href="https://x.com/musabshaikh242"><img src={x} alt="" width="22px" /></a>  
+                       
+                    </div>
+
+                    {/* for mobile  */}
+
+                    <div className='md:hidden flex justify-center items-center gap-4 text-[12px] light:text-gray-700 text-gray-400'>
+                      <a href="https://github.com/piratesofsi"><img src={github} alt=""  className='' width="26px" /></a>  
+                      <a href="https://www.linkedin.com/in/musab-shaikh-16a58128a/"><img src={linkdin} alt="" width="24px" /></a>  
+                      <a href="https://x.com/musabshaikh242"><img src={x} alt="" width="18px" /></a>  
+                    </div>
+    </div>
+               
 
                     </form>
                     
@@ -126,44 +157,19 @@ const Contact = () => {
 
                 {/* footer contact  */}
 
-                <div className='w-full flex  md:flex-row md:justify-between  py-2 px-8 gap-2 border-t border-white/10 light:border-gray-200
-mt-0  sm:mt-12  flex-col items-center 
+                <div className='w-full md:h-4  pt-3  md:pt-3 md:py-0 px-2 gap-2  py-0
+mt-0    flex-col items-center 
  '>
 
     {/* copyright  */}
     <div className='flex w-full justify-start max-w-50%'>
-        <p className="md:mt-4 text-center md:text-[12px] text-[9px] text-white/40  leading-relaxed light:text-gray-700">
+        <p className="md:mt-2 md:py-1 py-3  text-center md:text-[12px] text-[9px] text-white/40  leading-relaxed light:text-gray-700">
   © {new Date().getFullYear()} Musab Shaikh. All rights reserved.
 </p>
 
 
     </div>
-
-    <div className='flex  w-full justify-start gap-2  pr-72'>
- {/* donwload resume button */}
-                    <button className='light:text-black   text-white  md:py-2 md:px-2  md:text-[15px]
-                rounded font-medium transition bg-blue-500 light:bg-blue-400 hover:bg-blue-700 light:hover:bg-blue-500 cursor-pointer hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] light:hover:shadow-[0_0_12px_rgba(37,99,235,0.25)] text-[10px] 
-                py-1 px-8' >
-                        Download Resume
-                    </button>
-
-                    {/* contact icons  */}
-                    <div className=' md:flex justify-center items-center gap-3 hidden '>
-                      <a href="https://github.com/piratesofsi"><img src={github} alt=""  className=''/></a>  
-                      <a href="https://www.linkedin.com/in/musab-shaikh-16a58128a/"><img src={linkdin} alt="" /></a>  
-                      <a href="https://x.com/musabshaikh242"><img src={x} alt="" width="22px" /></a>  
-                       
-                    </div>
-
-                    <div className='md:hidden flex justify-center items-center gap-2 text-[12px] light:text-gray-700 text-gray-400'>
-                        <a href="" className='flex gap-1'>Github <span>|</span></a>
-                       
-                        <a href="" className='flex gap-1'>Linkdin  <span>|</span></a>
-                        <a href="">X</a>
-
-                    </div>
-    </div>
-                   
+    
 
                     
 
