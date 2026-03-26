@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import RevealOnScreen from '../RevealOnScreen'
 import emailjs from "@emailjs/browser";
-import github from "../../assets/github-icon.svg"; 
-import linkdin from "../../assets/linkedin-icon.svg"; 
-import x from "../../assets/x-icon.svg"; 
+import github from "../../assets/github-icon.svg";
+import linkdin from "../../assets/linkedin-icon.svg";
+import x from "../../assets/x-icon.svg";
 import toast from "react-hot-toast";
 
 
@@ -12,7 +12,7 @@ const Contact = () => {
 
     // define a usestate so i can disable the submit 
     // while sending 
-    const [isSending,setisSending] = useState(false);
+    const [isSending, setisSending] = useState(false);
 
 
     // function for handling the submit of form means sending email 
@@ -32,42 +32,42 @@ const Contact = () => {
             import.meta.env.VITE_EMAIL_TEMPLATE,
             e.target,
             import.meta.env.VITE_EMAIL_PUBLIC
-        ).then(()=>{
-           toast.success("Message sent successfully ");
+        ).then(() => {
+            toast.success("Message sent successfully ");
 
 
             // clear all inputes
-            
-        // clear all inputs
-        e.target.reset();
+
+            // clear all inputs
+            e.target.reset();
 
         })
-        .catch((err)=>{
-            console.log(err);
-              toast.error("Oops! Something went wrong 😭");
-        })
-        .finally(()=>{
-            // enable the button 
-            setisSending(false);
-        })
+            .catch((err) => {
+                console.log(err);
+                toast.error("Oops! Something went wrong 😭");
+            })
+            .finally(() => {
+                // enable the button 
+                setisSending(false);
+            })
 
     }
 
 
     return (
 
-        
-            <section id='Contact'
-                className='min-h-[calc(100svh-4rem)] pt-2 flex flex-col justify-center items-center md:mt-0 -mt-12 '>
 
-                {/* main content form 
+        <section id='Contact'
+            className='min-h-[calc(100svh-4rem)] pt-2 flex flex-col justify-center items-center md:mt-0 -mt-12 '>
+
+            {/* main content form 
          */}
-         <RevealOnScreen>
+            <RevealOnScreen>
                 <div className='px-4 md:w-150 mx-auto  py-10  '>
                     <h1 className='md:text-3xl  text-2xl font-bold light:from-purple-600 light:to-pink-500 font-mono text-center mb-5 bg-gradient-to-r bg-clip-text from-blue-500 
             to-cyan-400 text-transparent  '>Get In Touch</h1>
 
-            {/* form  */}
+                    {/* form  */}
                     <form onSubmit={sendEmail} className='space-y-6'>
                         {/* for name input  */}
                         <div className='relative'>
@@ -118,66 +118,66 @@ const Contact = () => {
 disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100
 
 ' >
-                              {isSending ? "Sending..." : "Submit"}
-                              
+                            {isSending ? "Sending..." : "Submit"}
+
 
                         </button>
 
-                        
-    <div className='flex  w-full justify-center gap-2  '>
 
-                    
+                        <div className='flex  w-full justify-center gap-2  '>
 
-                    {/* for desktop  */}
 
-                    {/* contact icons  */}
-                    <div className=' md:flex justify-center items-center gap-3 hidden '>
-                      <a href="https://github.com/piratesofsi"><img src={github} alt=""  className=''/></a>  
-                      <a href="https://www.linkedin.com/in/musab-shaikh-16a58128a/"><img src={linkdin} alt="" /></a>  
-                      <a href="https://x.com/musabshaikh242"><img src={x} alt="" width="22px" /></a>  
-                       
-                    </div>
 
-                    {/* for mobile  */}
+                            {/* for desktop  */}
 
-                    <div className='md:hidden flex justify-center items-center gap-4 text-[12px] light:text-gray-700 text-gray-400'>
-                      <a href="https://github.com/piratesofsi"><img src={github} alt=""  className='' width="26px" /></a>  
-                      <a href="https://www.linkedin.com/in/musab-shaikh-16a58128a/"><img src={linkdin} alt="" width="24px" /></a>  
-                      <a href="https://x.com/musabshaikh242"><img src={x} alt="" width="18px" /></a>  
-                    </div>
-    </div>
-               
+                            {/* contact icons  */}
+                            <div className=' md:flex justify-center items-center gap-3 hidden '>
+                                <a href="https://github.com/piratesofsi"><img src={github} alt="" className='' /></a>
+                                <a href="https://www.linkedin.com/in/musab-shaikh-16a58128a/"><img src={linkdin} alt="" /></a>
+                                <a href="https://x.com/musabshaikh242"><img src={x} alt="" width="22px" /></a>
+
+                            </div>
+
+                            {/* for mobile  */}
+
+                            <div className='md:hidden flex justify-center items-center gap-4 text-[12px] light:text-gray-700 text-gray-400'>
+                                <a href="https://github.com/piratesofsi"><img src={github} alt="" className='' width="26px" /></a>
+                                <a href="https://www.linkedin.com/in/musab-shaikh-16a58128a/"><img src={linkdin} alt="" width="24px" /></a>
+                                <a href="https://x.com/musabshaikh242"><img src={x} alt="" width="18px" /></a>
+                            </div>
+                        </div>
+
 
                     </form>
-                    
+
 
 
                 </div>
-                </RevealOnScreen>
+            </RevealOnScreen>
 
-                {/* footer contact  */}
+            {/* footer contact  */}
 
-                <div className='w-full md:h-4  pt-3  md:pt-3 md:py-0 px-2 gap-2  py-0
+            <div className='w-full md:h-4  pt-3  md:pt-3 md:py-0 px-2 gap-2  py-0
 mt-0    flex-col items-center 
  '>
 
-    {/* copyright  */}
-    <div className='flex w-full justify-start max-w-50%'>
-        <p className="md:mt-2 md:py-1 py-3  text-center md:text-[12px] text-[9px] text-white/40  leading-relaxed light:text-gray-700">
-  © {new Date().getFullYear()} Musab Shaikh. All rights reserved.
-</p>
+                {/* copyright  */}
+                <div className='flex w-full justify-start max-w-50%'>
+                    <p className="md:mt-2 md:py-1 py-3  text-center md:text-[12px] text-[9px] text-white/40  leading-relaxed light:text-gray-700">
+                        © {new Date().getFullYear()} Musab Shaikh. All rights reserved.
+                    </p>
 
-
-    </div>
-    
-
-                    
 
                 </div>
 
-            </section>
 
-        
+
+
+            </div>
+
+        </section>
+
+
     )
 }
 
