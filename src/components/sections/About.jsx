@@ -7,7 +7,10 @@ import java from "../../assets/java.png";
 import tailwind from "../../assets/tailwindcss.svg";
 import nodejs from "../../assets/nodejs.png";
 import sql from "../../assets/sql.png";
+import expressjs from "../../assets/expressjs.png"
+import mongoDB from "../../assets/mongoDb.png"
 import RevealOnScreen from '../RevealOnScreen';
+
 
 const About = () => {
     return (
@@ -91,6 +94,18 @@ const About = () => {
                                     <img src={sql} alt="sql"
                                         className="max-w-full max-h-full object-contain" />
                                 </a>
+
+                                   <a href="https://developer.mozilla.org/en-US/docs/Glossary/SQL" className="md:w-9 md:h-9  w-7  h-7 flex items-center justify-center">
+                                    <img src={expressjs} alt="sql"
+                                        className="max-w-full max-h-full object-contain" />
+                                </a>
+
+
+                                 <a href="https://developer.mozilla.org/en-US/docs/Glossary/SQL" className="md:w-9 md:h-9  w-7  h-7 flex items-center justify-center">
+                                    <img src={mongoDB} alt="sql"
+                                        className="max-w-full max-h-full object-contain" />
+                                </a>
+
 
                                 {/* <a href=""  className="w-9 h-9 flex items-center justify-center">
                                 <img src={js} alt="html" 
